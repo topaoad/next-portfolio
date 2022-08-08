@@ -115,15 +115,15 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .card,
   .footer {
     border-color: #222;
   }
   .code {
-    background: #111;
+    background: white;
   }
   .logo img {
     filter: invert(1);
   }
-}
+} */
