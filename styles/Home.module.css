@@ -2,6 +2,12 @@
   padding: 0 2rem;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -28,6 +34,28 @@
   flex-grow: 1;
 }
 
+.navbar {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 38.25px;
+  color: white;
+  background-color: #e64980;
+}
+
+.title {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  line-height: 24.59px;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -39,21 +67,24 @@
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
 .description {
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.menu a {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 38.25px;
+  color: black;
 }
 
 .code {
@@ -101,11 +132,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {
