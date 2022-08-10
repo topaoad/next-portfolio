@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  line-height: 24.59px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.menu {
+  font-family: "Avenir Next";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.menu a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 38.25px;
+  color: black;
+}
