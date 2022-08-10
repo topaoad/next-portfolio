@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Header } from 'src/components/Header';
 import styles from 'styles/Home.module.css';
-import { AppShell, Container, Footer, MediaQuery, Navbar } from '@mantine/core';
+import { AppShell, Container, MediaQuery, Navbar } from '@mantine/core';
+import { Header } from 'src/components/Header';
 import { TitleSection } from 'src/components/TitleSection';
+import { Footer } from 'src/components/Footer';
 
 const Home: NextPage = () => {
   const [opened, setOpened] = useState<boolean>(false);
@@ -14,17 +15,7 @@ const Home: NextPage = () => {
     <AppShell
       padding='md'
       header={<Header opened={opened} toggleOpenState={toggleOpenState} />}
-      footer={
-        <Footer height={60} p='md' className={styles.footer}>
-          <a
-            href='https://www.youtube.com/c/shimabu_it/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            &copy; 2022 Shimabu IT University
-          </a>
-        </Footer>
-      }
+      footer={<Footer/>}
       navbarOffsetBreakpoint='sm'
       navbar={
         <MediaQuery largerThan='sm' styles={{ display: 'none' }}>
