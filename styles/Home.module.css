@@ -6,15 +6,6 @@
   width: 100vw;
 }
 
-.navbar {
-  font-family: "Avenir Next";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 38.25px;
-  color: white;
-  background-color: #e64980;
-}
-
 .description {
   text-align: center;
   margin: 4rem 0;

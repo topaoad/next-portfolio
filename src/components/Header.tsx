@@ -2,24 +2,19 @@ import React from 'react';
 import type { FC } from 'react';
 import styles from './Header.module.css';
 import { Anchor, Burger, Header as MantineHeader } from '@mantine/core';
-import { useResizeObserver } from '@mantine/hooks';
 
 type Props = {
+  isMobileUi: boolean;
   opened: boolean;
   toggleOpenState: () => void;
 };
 
 export const Header: FC<Props> = (props) => {
-  const [ref, rect] = useResizeObserver();
-  const isMobileSize = () => {
-    return (rect.width <= 390);
-  }
-
   return (
-    <div ref={ref}>
+    <div>
       <MantineHeader height={70} p='md'>
         <div className={styles.header}>
-          {isMobileSize() && (
+          {props.isMobileUi && (
             <Burger
               opened={props.opened}
               onClick={() => props.toggleOpenState()}
@@ -29,7 +24,7 @@ export const Header: FC<Props> = (props) => {
             />
           )}
           <h1 className={styles.title}>Shimabu IT University</h1>
-          {!isMobileSize() && (
+          {!props.isMobileUi && (
             <div className={styles.menu}>
               <Anchor href='-' target='_self'>
                 About

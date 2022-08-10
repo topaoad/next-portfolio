@@ -1,38 +1,40 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from 'styles/Home.module.css';
-import { AppShell, Container, MediaQuery, Navbar } from '@mantine/core';
+import { AppShell, Container } from '@mantine/core';
 import { Header } from 'src/components/Header';
 import { TitleSection } from 'src/components/TitleSection';
 import { Footer } from 'src/components/Footer';
+import { Navbar } from 'src/components/Navbar';
+import { useResizeObserver } from '@mantine/hooks';
+import { isMobileWidth } from 'src/utils/mobile';
 
 const Home: NextPage = () => {
   const [opened, setOpened] = useState<boolean>(false);
+  const [isMobileUi, setIsMobileUi] = useState<boolean>(true);
+  const [ref, rect] = useResizeObserver();
+
   const toggleOpenState = (): void => setOpened((prev) => !prev);
+
+  useEffect(() => {
+    setIsMobileUi(isMobileWidth(rect.width));
+  }, [rect.width]);
 
   return (
     <AppShell
       padding='md'
-      header={<Header opened={opened} toggleOpenState={toggleOpenState} />}
-      footer={<Footer/>}
-      navbarOffsetBreakpoint='sm'
-      navbar={
-        <MediaQuery largerThan='sm' styles={{ display: 'none' }}>
-          <Navbar
-            p='md'
-            hiddenBreakpoint='sm'
-            hidden={!opened}
-            width={{ sm: 200, lg: 300 }}
-            className={styles.navbar}
-          >
-            <Navbar.Section mt='md'>About</Navbar.Section>
-            <Navbar.Section>Blog</Navbar.Section>
-            <Navbar.Section>Portfolio</Navbar.Section>
-            <Navbar.Section>Contact</Navbar.Section>
-          </Navbar>
-        </MediaQuery>
+      header={
+        <Header
+          isMobileUi={isMobileUi}
+          opened={opened}
+          toggleOpenState={toggleOpenState}
+        />
       }
+      footer={<Footer />}
+      navbarOffsetBreakpoint='sm'
+      navbar={<Navbar isMobileUi={isMobileUi} opened={opened} />}
+      ref={ref}
     >
       <Head>
         <title>Next Portfolio</title>
