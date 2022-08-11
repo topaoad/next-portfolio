@@ -1,7 +1,14 @@
 import React from 'react';
 import type { FC } from 'react';
 import styles from './Header.module.css';
-import { Anchor, Burger, Header as MantineHeader } from '@mantine/core';
+import {
+  ActionIcon,
+  Anchor,
+  Burger,
+  Header as MantineHeader,
+  useMantineColorScheme,
+} from '@mantine/core';
+import { IconSun, IconMoonStars } from '@tabler/icons';
 
 type Props = {
   isMobileUi: boolean;
@@ -10,6 +17,9 @@ type Props = {
 };
 
 export const Header: FC<Props> = (props) => {
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const dark = colorScheme === 'dark';
+
   return (
     <div>
       <MantineHeader height={70} p='md'>
@@ -40,6 +50,14 @@ export const Header: FC<Props> = (props) => {
               </Anchor>
             </div>
           )}
+          <ActionIcon
+            variant='outline'
+            color={dark ? 'yellow' : 'blue'}
+            onClick={() => toggleColorScheme()}
+            title='ダークモードをトグル'
+          >
+            {dark ? <IconSun size={18} /> : <IconMoonStars size={18} />}
+          </ActionIcon>
         </div>
       </MantineHeader>
     </div>
