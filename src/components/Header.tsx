@@ -1,13 +1,15 @@
 import React from 'react';
 import type { FC } from 'react';
+import Link from 'next/link';
 import styles from './Header.module.css';
 import {
   ActionIcon,
-  Anchor,
   Burger,
   Header as MantineHeader,
   useMantineColorScheme,
+  Text,
 } from '@mantine/core';
+import { AnchorSelf } from './AnchorSelf';
 import { IconSun, IconMoonStars } from '@tabler/icons';
 
 import { useAtom } from 'jotai';
@@ -36,21 +38,15 @@ export const Header: FC<Props> = (props) => {
               mr='xl'
             />
           )}
-          <h1 className={styles.title}>Shimabu IT University</h1>
+          <Link href='/' passHref>
+            <Text className={styles.title}>Shimabu IT University</Text>
+          </Link>
           {!isMobileUi && (
             <div className={styles.menu}>
-              <Anchor href='-' target='_self'>
-                About
-              </Anchor>
-              <Anchor href='-' target='_self'>
-                Blog
-              </Anchor>
-              <Anchor href='-' target='_self'>
-                Portfolio
-              </Anchor>
-              <Anchor href='-' target='_self'>
-                Contact
-              </Anchor>
+              <AnchorSelf href='about'>About</AnchorSelf>
+              <AnchorSelf href='blog'>Blog</AnchorSelf>
+              <AnchorSelf href='portfolio'>Portfolio</AnchorSelf>
+              <AnchorSelf href='contact'>Contact</AnchorSelf>
             </div>
           )}
           <ActionIcon
