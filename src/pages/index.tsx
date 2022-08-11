@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         <meta name='description' content='Shimabu IT University' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Contents />
+      <Contents isMobileUi={isMobileUi}/>
     </AppShell>
   );
 };

@@ -1,14 +1,28 @@
 import React from 'react';
-import { Container } from '@mantine/core';
+import type { FC } from 'react';
+import { Container, Stack } from '@mantine/core';
 import { TitleSection } from 'src/components/TitleSection';
+import { BlogSection } from './BlogSection';
+import { PortfolioSection } from './PortfolioSection';
+import { GitHubSection } from './GitHubSection';
+import { TwitterSection } from './TwitterSection';
 import styles from './Contents.module.css';
 
-export const Contents = () => {
+type Props = {
+  isMobileUi: boolean;
+};
+
+export const Contents: FC<Props> = (props) => {
   return (
     <Container className={styles.container}>
-      {' '}
-      <TitleSection name='ピータン' />
-      <div className={styles.grid}>
+      <Stack justify='flex-start' spacing='lg'>
+        <TitleSection name='ピータン' />
+        <BlogSection />
+        <PortfolioSection />
+        <GitHubSection />
+        <TwitterSection />
+      </Stack>
+      {/* <div className={styles.grid}>
         <a href='https://nextjs.org/docs' className={styles.card}>
           <h2>Documentation &rarr;</h2>
           <p>Find in-depth information about Next.js features and API.</p>
@@ -34,7 +48,7 @@ export const Contents = () => {
           <h2>Deploy &rarr;</h2>
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
-      </div>
+      </div> */}
     </Container>
   );
 };
