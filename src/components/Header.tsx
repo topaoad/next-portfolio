@@ -10,13 +10,16 @@ import {
 } from '@mantine/core';
 import { IconSun, IconMoonStars } from '@tabler/icons';
 
+import { useAtom } from 'jotai';
+import { isMobileUiAtom } from 'src/atoms/uiMode';
+
 type Props = {
-  isMobileUi: boolean;
   opened: boolean;
   toggleOpenState: () => void;
 };
 
 export const Header: FC<Props> = (props) => {
+  const [isMobileUi] = useAtom(isMobileUiAtom);
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const dark = colorScheme === 'dark';
 
@@ -24,7 +27,7 @@ export const Header: FC<Props> = (props) => {
     <div>
       <MantineHeader height={70} p='md'>
         <div className={styles.header}>
-          {props.isMobileUi && (
+          {isMobileUi && (
             <Burger
               opened={props.opened}
               onClick={() => props.toggleOpenState()}
@@ -34,7 +37,7 @@ export const Header: FC<Props> = (props) => {
             />
           )}
           <h1 className={styles.title}>Shimabu IT University</h1>
-          {!props.isMobileUi && (
+          {!isMobileUi && (
             <div className={styles.menu}>
               <Anchor href='-' target='_self'>
                 About

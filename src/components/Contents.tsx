@@ -1,5 +1,4 @@
 import React from 'react';
-import type { FC } from 'react';
 import { Container, Stack } from '@mantine/core';
 import { TitleSection } from 'src/components/TitleSection';
 import { BlogSection } from './BlogSection';
@@ -8,11 +7,8 @@ import { GitHubSection } from './GitHubSection';
 import { TwitterSection } from './TwitterSection';
 import styles from './Contents.module.css';
 
-type Props = {
-  isMobileUi: boolean;
-};
+export const Contents = () => {
 
-export const Contents: FC<Props> = (props) => {
   return (
     <Container className={styles.container}>
       <Stack justify='flex-start' spacing='lg'>

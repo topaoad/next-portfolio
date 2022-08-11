@@ -3,13 +3,17 @@ import type { FC } from 'react';
 import { Navbar as MantineNavbar } from '@mantine/core';
 import styles from './Navbar.module.css';
 
+import { useAtom } from 'jotai';
+import { isMobileUiAtom } from 'src/atoms/uiMode';
+
 type Props = {
-  isMobileUi: boolean;
   opened: boolean;
 };
 
 export const Navbar: FC<Props> = (props) => {
-  return props.isMobileUi ? (
+  const [isMobileUi] = useAtom(isMobileUiAtom);
+
+  return isMobileUi ? (
     <MantineNavbar
       p='md'
       hiddenBreakpoint='sm'
