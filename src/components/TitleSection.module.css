@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 0px 16px;
   background-color: #E64980;
+  height: 248px;
   width: 100%;
   color: white;
   font-weight: 700;
@@ -12,12 +11,10 @@
 
 .title {
   font-family: 'Avenir Next';
-  size: 28px;
   line-height: 38.25px;
 }
 
 .subTitle {
   font-family: YuGothic;
-  size: 16px;
   line-height: 24px;
 }
