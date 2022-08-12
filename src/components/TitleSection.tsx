@@ -1,7 +1,6 @@
-import React from 'react';
-import type { FC } from 'react';
-import { Container, Stack, Space, Text } from '@mantine/core';
+import React, { FC } from 'react';
 import styles from './TitleSection.module.css';
+import { Container, Stack, Space, Text } from '@mantine/core';
 
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';
