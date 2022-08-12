@@ -1,5 +1,4 @@
-import React from 'react';
-import type { FC } from 'react';
+import React, {FC} from 'react';
 import { Navbar as MantineNavbar } from '@mantine/core';
 import styles from './Navbar.module.css';
 

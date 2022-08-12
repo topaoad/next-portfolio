@@ -1,5 +1,4 @@
-import React from 'react';
-import type { FC } from 'react';
+import React, {FC} from 'react';
 import Link from 'next/link';
 import styles from './Header.module.css';
 import {

@@ -1,5 +1,4 @@
-import React from 'react';
-import type { FC } from 'react';
+import React, {FC} from 'react';
 import { Card, Text } from '@mantine/core';
 import { AnchorSelf } from './AnchorSelf';
 
