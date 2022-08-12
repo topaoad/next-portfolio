@@ -1,7 +1,8 @@
 import React from 'react';
-// import styles from './PortfolioSection.module.css';
-import { Container, Divider, Stack, Title } from '@mantine/core';
+import { Center, Container, Divider, Stack, Title } from '@mantine/core';
 import { LinkButton } from './LinkButton';
+import { Portfolios } from './Portfolios';
+import { AnchorSelf } from './AnchorSelf';
 
 export const PortfolioSection = () => {
   return (
@@ -9,7 +10,12 @@ export const PortfolioSection = () => {
       <Stack>
         <Title align='left'>Portfolio</Title>
         <Divider mt='sm' />
-        <LinkButton>View All</LinkButton>
+        <Portfolios />
+        <Center>
+          <AnchorSelf href='/portfolio'>
+            <LinkButton>View All</LinkButton>
+          </AnchorSelf>
+        </Center>
       </Stack>
     </Container>
   );

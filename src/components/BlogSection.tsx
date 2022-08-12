@@ -1,12 +1,6 @@
 import React from 'react';
 import styles from './BlogSection.module.css';
-import {
-  Center,
-  Container,
-  Divider,
-  Stack,
-  Title,
-} from '@mantine/core';
+import { Center, Container, Divider, Stack, Title } from '@mantine/core';
 import { LinkButton } from './LinkButton';
 import { Blogs } from './Blogs';
 import { AnchorSelf } from './AnchorSelf';

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './BlogSection.module.css';
 import { Container, Stack } from '@mantine/core';
 import { blogData } from 'data/blogData';
 import { BlogCard } from './BlogCard';
