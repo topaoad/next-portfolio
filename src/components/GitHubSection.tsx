@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, Container, Divider, Stack, Title } from '@mantine/core';
 import styles from './GitHubSection.module.css';
+import { Container, Divider, Stack, Title } from '@mantine/core';
+import { LinkButton } from './LinkButton';
 
 export const GitHubSection = () => {
   return (
@@ -16,7 +17,7 @@ export const GitHubSection = () => {
       >
         <Title align='left'>GitHub</Title>
         <Divider mt='sm' />
-        <Button radius='xl'>View on GitHub</Button>
+        <LinkButton>View on GitHub</LinkButton>
       </Stack>
     </Container>
   );

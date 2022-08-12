@@ -1,6 +1,14 @@
 import React from 'react';
 import { Button, Container, Divider, Stack, Title } from '@mantine/core';
 import styles from './BlogSection.module.css';
+import {
+  Center,
+  Container,
+  Divider,
+  Stack,
+  Title,
+} from '@mantine/core';
+import { LinkButton } from './LinkButton';
 
 export const BlogSection = () => {
   return (
@@ -16,7 +24,7 @@ export const BlogSection = () => {
       >
         <Title align='left'>Blog</Title>
         <Divider mt='sm' />
-        <Button radius='xl'>View All</Button>
+            <LinkButton>View All</LinkButton>
       </Stack>
     </Container>
   );

@@ -1,22 +1,15 @@
 import React from 'react';
-import { Button, Container, Divider, Stack, Title } from '@mantine/core';
 // import styles from './PortfolioSection.module.css';
+import { Container, Divider, Stack, Title } from '@mantine/core';
+import { LinkButton } from './LinkButton';
 
 export const PortfolioSection = () => {
   return (
     <Container>
-      <Stack
-        spacing='lg'
-        sx={(theme) => ({
-          backgroundColor:
-            theme.colorScheme === 'dark'
-              ? theme.colors.dark[8]
-              : theme.colors.gray[0],
-        })}
-      >
+      <Stack>
         <Title align='left'>Portfolio</Title>
         <Divider mt='sm' />
-        <Button radius='xl'>View All</Button>
+        <LinkButton>View All</LinkButton>
       </Stack>
     </Container>
   );
