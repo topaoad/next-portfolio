@@ -8,7 +8,6 @@ import { TwitterSection } from './TwitterSection';
 import styles from './Contents.module.css';
 
 export const Contents = () => {
-
   return (
     <Container className={styles.container}>
       <Stack justify='flex-start' spacing='lg'>

@@ -1,13 +1,23 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: #E64980;
   height: 248px;
   width: 100%;
   color: white;
   font-weight: 700;
 }
+
+.mobile-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pc-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 
 .title {
   font-family: 'Avenir Next';

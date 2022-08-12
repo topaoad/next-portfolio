@@ -7,7 +7,7 @@ import { RssIcon } from './icons/RssIcon';
 
 export const SnsIconGroup = () => {
   return (
-    <Group position='center' spacing='xs'>
+    <Group position='left' spacing='xs'>
       <ActionIcon variant='transparent'>
         <TwitterIcon />
       </ActionIcon>
