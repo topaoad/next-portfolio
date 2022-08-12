@@ -19,12 +19,14 @@ type Props = {
 export const PortfolioCard: FC<Props> = (props) => {
   return (
     <Card>
-      <Image
-        src={props.data.imageUrl}
-        alt={props.data.title}
-        width={358}
-        height={184}
-      />
+      <a href = {props.data.siteUrl}>
+        <Image
+          src={props.data.imageUrl}
+          alt={props.data.title}
+          width={358}
+          height={184}
+        />
+      </a>
       <Text size='lg' weight={700}>
         {props.data.title}
       </Text>
