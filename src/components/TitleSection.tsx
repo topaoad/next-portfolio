@@ -15,22 +15,28 @@ export const TitleSection: FC<Props> = (props) => {
   const [isMobileUi] = useAtom(isMobileUiAtom);
 
   return (
-    <Container
-      className={cx(
-        styles.container,
-        isMobileUi ? styles[`mobile-layout`] : styles[`pc-layout`]
-      )}
-    >
-      <Stack align='flex-start' justify='center'>
-        <Text sx={{ fontSize: isMobileUi ? 28 : 36 }} className={styles.title}>
-          Shimabu IT University
-        </Text>
-        <Text size='md' className={styles.subTitle}>
-          {props.name}のポートフォリオのためのページです
-        </Text>
-        {isMobileUi && <Space h='md' />}
-      </Stack>
-      <SnsIconGroup />
-    </Container>
+    <>
+      <div className={styles.band} />
+      <Container
+        className={cx(
+          styles.container,
+          isMobileUi ? styles[`mobile-layout`] : styles[`pc-layout`]
+        )}
+      >
+        <Stack align='flex-start' justify='center'>
+          <Text
+            sx={{ fontSize: isMobileUi ? 28 : 36 }}
+            className={styles.title}
+          >
+            Shimabu IT University
+          </Text>
+          <Text size='md' className={styles.subTitle}>
+            {props.name}のポートフォリオのためのページです
+          </Text>
+          {isMobileUi && <Space h='md' />}
+        </Stack>
+        <SnsIconGroup />
+      </Container>
+    </>
   );
 };
