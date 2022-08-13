@@ -1,16 +1,26 @@
 import type { AppProps } from 'next/app';
 import {
-  MantineProvider,
-  ColorSchemeProvider,
   ColorScheme,
+  ColorSchemeProvider,
+  Global,
+  MantineProvider,
 } from '@mantine/core';
 import { useLocalStorage } from '@mantine/hooks';
+
+function MyGlobalStyles() {
+  return <Global styles={(theme) => ({
+    '*': {
+      boxSizing: 'border-box',
+      fontFamily: 'YuGhothic -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif'
+    }
+  })} />;
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: 'mantine-color-scheme',
     defaultValue: 'light',
-    getInitialValueInEffect: true
+    getInitialValueInEffect: true,
   });
 
   const toggleColorSchem = (value?: ColorScheme) =>
