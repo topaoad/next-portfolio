@@ -14,9 +14,7 @@ export const Contents = () => {
         spacing='lg'
         sx={(theme) => ({
           backgroundColor:
-            theme.colorScheme === 'dark'
-              ? theme.colors.dark[8]
-              : 'white',
+            theme.colorScheme === 'dark' ? theme.colors.dark[8] : 'white',
         })}
       >
         <TitleSection name='ピータン' />
