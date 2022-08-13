@@ -16,7 +16,7 @@ export const Contents = () => {
           backgroundColor:
             theme.colorScheme === 'dark'
               ? theme.colors.dark[8]
-              : theme.colors.gray[0],
+              : 'white',
         })}
       >
         <TitleSection name='ピータン' />
