@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { ColorSwatch, Group, Stack, Text } from '@mantine/core';
+import { StuckedBarChart } from './StuckedBarChart';
 
 export type LanguageData = {
   name: string;
@@ -14,7 +15,7 @@ type Props = {
 export const LanguageInfo: FC<Props> = (props) => {
   return (
     <Stack>
-      <Text>あとでここにバーチャート</Text>
+      <StuckedBarChart languages={props.languages} />
       <Group>
         {props.languages.map((language) => (
           <Group key={language.name} spacing='xs'>
