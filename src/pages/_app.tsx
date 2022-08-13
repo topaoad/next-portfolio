@@ -8,12 +8,17 @@ import {
 import { useLocalStorage } from '@mantine/hooks';
 
 function MyGlobalStyles() {
-  return <Global styles={(theme) => ({
-    '*': {
-      boxSizing: 'border-box',
-      fontFamily: 'YuGhothic -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif'
-    }
-  })} />;
+  return (
+    <Global
+      styles={(theme) => ({
+        '*': {
+          boxSizing: 'border-box',
+          fontFamily:
+            'YuGhothic -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+        },
+      })}
+    />
+  );
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -36,6 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         withNormalizeCSS
         theme={{ colorScheme: colorScheme }}
       >
+        <MyGlobalStyles />
         <Component {...pageProps} />
       </MantineProvider>
     </ColorSchemeProvider>
