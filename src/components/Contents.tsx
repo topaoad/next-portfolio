@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Container, Stack } from '@mantine/core';
 import { TitleSection } from 'src/components/TitleSection';
 import { BlogSection } from './BlogSection';
@@ -20,12 +20,10 @@ export const Contents = () => {
         })}
       >
         <TitleSection name='ピータン' />
-        <Suspense>
-          <BlogSection />
-          <PortfolioSection />
-          <GitHubSection />
-          <TwitterSection />
-        </Suspense>
+        <BlogSection />
+        <PortfolioSection />
+        <GitHubSection />
+        <TwitterSection />
       </Stack>
     </Container>
   );
