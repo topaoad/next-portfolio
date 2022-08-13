@@ -3,6 +3,10 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import { Card, Text } from '@mantine/core';
 
+type Props = {
+  data: Data;
+};
+
 type Data = {
   id: string;
   title: string;
@@ -12,9 +16,6 @@ type Data = {
   createdAt: string;
 };
 
-type Props = {
-  data: Data;
-};
 
 export const PortfolioCard: FC<Props> = (props) => {
   return (

@@ -1,6 +1,10 @@
 import React, {FC} from 'react';
 import { Card, Text } from '@mantine/core';
 
+type Props = {
+  data: Data;
+};
+
 type Data = {
   id: string;
   title: string;
@@ -9,9 +13,6 @@ type Data = {
   createdAt: string;
 };
 
-type Props = {
-  data: Data;
-};
 
 export const BlogCard: FC<Props> = (props) => {
   return (
