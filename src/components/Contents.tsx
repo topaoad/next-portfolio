@@ -1,15 +1,20 @@
 import React from 'react';
-import { Container, Stack } from '@mantine/core';
+import { Container, Grid, Stack } from '@mantine/core';
 import { TitleSection } from 'src/components/TitleSection';
 import { BlogSection } from './BlogSection';
 import { PortfolioSection } from './PortfolioSection';
 import { GitHubSection } from './GitHubSection';
 import { TwitterSection } from './TwitterSection';
-import styles from './Contents.module.css';
+
+import { useAtom } from 'jotai';
+import { isMobileUiAtom } from 'src/atoms/uiMode';
 
 export const Contents = () => {
+  const [isMobileUi] = useAtom(isMobileUiAtom);
+  const gridSpan = isMobileUi ? 12 : 6;
+
   return (
-    <Container className={styles.container}>
+    <Container>
       <Stack
         spacing='lg'
         sx={(theme) => ({
@@ -20,8 +25,14 @@ export const Contents = () => {
         <TitleSection name='ピータン' />
         <BlogSection />
         <PortfolioSection />
-        <GitHubSection />
-        <TwitterSection />
+        <Grid>
+          <Grid.Col span={gridSpan}>
+            <GitHubSection />
+          </Grid.Col>
+          <Grid.Col span={gridSpan}>
+            <TwitterSection />
+          </Grid.Col>
+        </Grid>
       </Stack>
     </Container>
   );
