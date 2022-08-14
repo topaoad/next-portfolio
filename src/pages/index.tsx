@@ -1,6 +1,6 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { Layout } from 'src/components/icons/Layout';
+import { Layout } from 'src/components/Layout';
 import { Container, Grid, Stack } from '@mantine/core';
 import { TitleSection } from 'src/components/TitleSection';
 import { BlogSection } from 'src/components/BlogSection';

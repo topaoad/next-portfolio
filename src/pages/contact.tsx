@@ -1,6 +1,6 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { Layout } from 'src/components/icons/Layout';
+import { Layout } from 'src/components/Layout';
 import {
   Box,
   Button,
