@@ -12,21 +12,30 @@ type Data = {
   userScreenName: string;
   date: string;
   tweet: string;
-}
+};
 
 export const TwitterCard: FC<Props> = (props) => {
   return (
     <Card>
-      <Group>
-        <Avatar radius='xl' src={props.data.userImage} alt={props.data.userScreenName} />
+      <Group noWrap align='flex-start'>
+        <Avatar
+          radius='xl'
+          src={props.data.userImage}
+          alt={props.data.userScreenName}
+        />
         <Stack>
-          <Group>
-            <Text size='sm' weight={700}>{props.data.userScreenName}</Text>
-            <Text size='xs' color='dimmed'>{`${props.data.userName}・${
-              props.data.date
-            }`}</Text>
+          <Group grow>
+            <Text size='sm' weight={700}>
+              {props.data.userScreenName}
+            </Text>
+            <Text
+              size='xs'
+              color='dimmed'
+            >{`${props.data.userName}・${props.data.date}`}</Text>
           </Group>
-          <Text size='sm' weight={500} >{props.data.tweet}</Text>
+          <Text size='sm' weight={500}>
+            {props.data.tweet}
+          </Text>
         </Stack>
       </Group>
     </Card>
