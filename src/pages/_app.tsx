@@ -11,10 +11,17 @@ function MyGlobalStyles() {
   return (
     <Global
       styles={(theme) => ({
-        '*': {
+        '*, *::before, *::after': {
           boxSizing: 'border-box',
           fontFamily:
             'YuGhothic -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+        },
+        'body,  a': {
+          backgroundColor:
+            theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
+          color:
+            theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
+          textDecoration: 'none',
         },
       })}
     />

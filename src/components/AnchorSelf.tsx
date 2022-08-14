@@ -10,7 +10,15 @@ type Props = {
 export const AnchorSelf: FC<Props> = (props) => {
   return (
     <Link href={props.href}>
-      <Anchor component='a'> {props.children} </Anchor>
+      <Anchor
+        component='a'
+        sx={(theme) => ({
+          color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        })}
+      >
+        {' '}
+        {props.children}{' '}
+      </Anchor>
     </Link>
   );
 };

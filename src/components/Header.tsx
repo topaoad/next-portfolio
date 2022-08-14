@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.css';
 import {
@@ -41,7 +41,7 @@ export const Header: FC<Props> = (props) => {
             <Text className={styles.title}>Shimabu IT University</Text>
           </Link>
           {!isMobileUi && (
-            <div className={styles.menu}>
+            <div className={styles.menu} >
               <AnchorSelf href='about'>About</AnchorSelf>
               <AnchorSelf href='blog'>Blog</AnchorSelf>
               <AnchorSelf href='portfolio'>Portfolio</AnchorSelf>
@@ -50,11 +50,15 @@ export const Header: FC<Props> = (props) => {
           )}
           <ActionIcon
             variant='outline'
-            color={dark ? 'yellow' : 'blue'}
+            sx={{borderColor: '#C1C2C5'}}
             onClick={() => toggleColorScheme()}
             title='ダークモードをトグル'
           >
-            {dark ? <IconSun size={18} /> : <IconMoonStars size={18} />}
+            {dark ? (
+              <IconSun size={18} color='yellow' />
+            ) : (
+              <IconMoonStars size={18} color='#25262B' />
+            )}
           </ActionIcon>
         </div>
       </MantineHeader>
