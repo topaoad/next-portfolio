@@ -3,7 +3,15 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';
-import { AppShell, Container, Space, Stack, Text, Title } from '@mantine/core';
+import {
+  AppShell,
+  Container,
+  Divider,
+  Space,
+  Stack,
+  Text,
+  Title,
+} from '@mantine/core';
 import { Header } from 'src/components/Header';
 import { Footer } from 'src/components/Footer';
 import { Navbar } from 'src/components/Navbar';
@@ -37,18 +45,25 @@ const About: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Container>
-      <Head>
-        <title>About - Next Portfolio</title>
-        <meta name='description' content='Shimabu IT University' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <Stack>
-        <Space h='md'/>
-        <Title order={2}>About</Title>
-        <Text>pitang1965</Text>
-        <Text>東京都いなか市在住の50代男性。 個人開発のためWeb技術を2019年から独学を継続（今はTypeScript/React/Supabaseが中心）。 昔19年ほどC/C++で開発・保守。 医療機器の品証も長くやりましたが、この8月から退職前の有給休暇に入ります。 お気軽にフォロー願います🤲</Text>
-      </Stack>
-    </Container>
+        <Head>
+          <title>About - Next Portfolio</title>
+          <meta name='description' content='Shimabu IT University' />
+          <link rel='icon' href='/favicon.ico' />
+        </Head>
+        <Stack>
+          <Space h='md' />
+          <Title order={2}>About</Title>
+          <Divider mt='sm' />
+          <Text>pitang1965</Text>
+          <Text>
+            東京都いなか市在住の50代男性。
+            個人開発のためWeb技術を2019年から独学を継続（今はTypeScript/React/Supabaseが中心）。
+            昔19年ほどC/C++で開発・保守。
+            医療機器の品証も長くやりましたが、この8月から退職前の有給休暇に入ります。
+            お気軽にフォロー願います🤲
+          </Text>
+        </Stack>
+      </Container>
     </AppShell>
   );
 };
