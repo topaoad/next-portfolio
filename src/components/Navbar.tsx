@@ -1,6 +1,7 @@
-import React, {FC} from 'react';
-import { Navbar as MantineNavbar } from '@mantine/core';
+import React, { FC } from 'react';
 import styles from './Navbar.module.css';
+import { Navbar as MantineNavbar } from '@mantine/core';
+import { AnchorSelf } from './AnchorSelf';
 
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';
@@ -20,10 +21,26 @@ export const Navbar: FC<Props> = (props) => {
       width={{ sm: 200, lg: 300 }}
       className={styles.navbar}
     >
-      <MantineNavbar.Section mt='md'>About</MantineNavbar.Section>
-      <MantineNavbar.Section>Blog</MantineNavbar.Section>
-      <MantineNavbar.Section>Portfolio</MantineNavbar.Section>
-      <MantineNavbar.Section>Contact</MantineNavbar.Section>
+      <MantineNavbar.Section mt='md'>
+        <AnchorSelf href='about' color='white'>
+          About
+        </AnchorSelf>
+      </MantineNavbar.Section>
+      <MantineNavbar.Section>
+        <AnchorSelf href='blog' color='white'>
+          Blog
+        </AnchorSelf>
+      </MantineNavbar.Section>
+      <MantineNavbar.Section>
+        <AnchorSelf href='portfolio' color='white'>
+          Portfolio
+        </AnchorSelf>
+      </MantineNavbar.Section>
+      <MantineNavbar.Section>
+        <AnchorSelf href='contact' color='white'>
+          Contact
+        </AnchorSelf>
+      </MantineNavbar.Section>
     </MantineNavbar>
   ) : (
     <div></div>

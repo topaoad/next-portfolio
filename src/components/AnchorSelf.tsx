@@ -5,6 +5,7 @@ import { Anchor } from '@mantine/core';
 type Props = {
   href: string;
   children: ReactNode;
+  color?: string;
 };
 
 export const AnchorSelf: FC<Props> = (props) => {
@@ -13,7 +14,7 @@ export const AnchorSelf: FC<Props> = (props) => {
       <Anchor
         component='a'
         sx={(theme) => ({
-          color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+          color: props.color || theme.colorScheme === 'dark' ? theme.white : theme.black,
         })}
       >
         {' '}
