@@ -6,7 +6,6 @@ import { PortfolioCard } from './PortfolioCard';
 
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';
-import { ColorSlider } from '@mantine/core/lib/ColorPicker/ColorSlider/ColorSlider';
 
 export const Portfolios = () => {
   // ポートフォリをいくつ表示するかどうか（モバイル表示かどうか、ホームページかどうかで異なる）
