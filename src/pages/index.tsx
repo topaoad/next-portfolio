@@ -1,45 +1,45 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
 import type { NextPage } from 'next';
-import Head from 'next/head';
+import { Layout } from 'src/components/icons/Layout';
+import { Container, Grid, Stack } from '@mantine/core';
+import { TitleSection } from 'src/components/TitleSection';
+import { BlogSection } from 'src/components/BlogSection';
+import { PortfolioSection } from 'src/components/PortfolioSection';
+import { GitHubSection } from 'src/components/GitHubSection';
+import { TwitterSection } from 'src/components/TwitterSection';
+
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';
-import { AppShell } from '@mantine/core';
-import { Header } from 'src/components/Header';
-import { Footer } from 'src/components/Footer';
-import { Navbar } from 'src/components/Navbar';
-import { useResizeObserver } from '@mantine/hooks';
-import { isMobileWidth } from 'src/utils/mobile';
-import { Contents } from 'src/components/Contents';
 
-const Home: NextPage = () => {
-  const [opened, setOpened] = useState<boolean>(false);
-  const [isMobileUi, setIsMobileUi] = useAtom(isMobileUiAtom);
-  const [ref, rect] = useResizeObserver();
-
-  const toggleOpenState = (): void => setOpened((prev) => !prev);
-
-  useEffect(() => {
-    setIsMobileUi(isMobileWidth(rect.width));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [rect.width]);
+const HomePage: NextPage = () => {
+  const [isMobileUi] = useAtom(isMobileUiAtom);
+  const gridSpan = isMobileUi ? 12 : 6;
 
   return (
-    <AppShell
-      padding='md'
-      header={<Header opened={opened} toggleOpenState={toggleOpenState} />}
-      footer={<Footer />}
-      navbarOffsetBreakpoint='sm'
-      navbar={<Navbar opened={opened} />}
-      ref={ref}
-    >
-      <Head>
-        <title>Next Portfolio</title>
-        <meta name='description' content='Shimabu IT University' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <Contents />
-    </AppShell>
+    <Layout content='Contact'>
+      <Container>
+        <Stack
+          spacing='lg'
+          sx={(theme) => ({
+            backgroundColor:
+              theme.colorScheme === 'dark' ? theme.colors.dark[8] : 'white',
+          })}
+        >
+          <TitleSection name='ピータン' />
+          <BlogSection />
+          <PortfolioSection />
+          <Grid>
+            <Grid.Col span={gridSpan}>
+              <GitHubSection />
+            </Grid.Col>
+            <Grid.Col span={gridSpan}>
+              <TwitterSection />
+            </Grid.Col>
+          </Grid>
+        </Stack>
+      </Container>
+    </Layout>
   );
 };
 
-export default Home;
+export default HomePage;
