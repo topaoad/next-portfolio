@@ -1,17 +1,19 @@
 import React from 'react';
-import { Footer as MantineFooter } from '@mantine/core';
-import styles from './Footer.module.css';
+import { Center, Footer as MantineFooter, Text } from '@mantine/core';
 
 export const Footer = () => {
   return (
-    <MantineFooter height={60} p='md' className={styles.footer}>
-      <a
-        href='https://www.youtube.com/c/shimabu_it/'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        &copy; 2022 Shimabu IT University
-      </a>
+    <MantineFooter height={60} p='md'>
+      <Center>
+        <Text
+          variant='link'
+          component='a'
+          href='https://www.youtube.com/c/shimabu_it/'
+          color='dimmed'
+        >
+          &copy; 2022 Shimabu IT University
+        </Text>
+      </Center>
     </MantineFooter>
   );
 };
