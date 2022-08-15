@@ -2,8 +2,7 @@ import React from 'react';
 import { Center, Container, Divider, Stack, Title } from '@mantine/core';
 import { LinkButton } from './LinkButton';
 import { Tweets } from './Tweets';
-
-const twitterUrl = 'https://twitter.com/pitang1965';
+import { twitterUrl } from 'data/urlData';
 
 export const TwitterSection = () => {
   return (

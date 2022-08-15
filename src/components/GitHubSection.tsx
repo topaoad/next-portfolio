@@ -2,8 +2,7 @@ import React from 'react';
 import { Center, Container, Divider, Stack, Title } from '@mantine/core';
 import { LinkButton } from './LinkButton';
 import { GitHubRepos } from './GitHubRepos';
-
-const githubUrl = 'https://github.com/pitang1965?tab=repositories';
+import { githubUrl } from 'data/urlData';
 
 export const GitHubSection = () => {
   return (
