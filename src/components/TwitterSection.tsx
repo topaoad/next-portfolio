@@ -8,7 +8,7 @@ export const TwitterSection = () => {
   return (
     <Container>
       <Stack spacing='lg'>
-        <Title align='left'>Twitter</Title>
+        <Title order={2} align='left'>Twitter</Title>
         <Divider mt='sm' />
         <Tweets />
         <Center>

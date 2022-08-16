@@ -29,7 +29,8 @@ const ContactPage: NextPage = () => {
   return (
     <Layout content='Contact'>
       <Container>
-        <Title align='left'>Contact</Title>
+      <Space h='md' />
+        <Title order={2} align='left'>Contact</Title>
         <Divider mt='sm' />
         <Box sx={{ maxWidth: 300 }} mx='auto'>
           <form onSubmit={form.onSubmit((values) => console.log(values))}>

@@ -8,7 +8,7 @@ export const BlogSection = () => {
   return (
     <Container>
       <Stack spacing='lg'>
-        <Title align='left'>Blog</Title>
+        <Title order={2} align='left'>Blog</Title>
         <Divider mt='sm' />
         <Blogs />
         <Center>

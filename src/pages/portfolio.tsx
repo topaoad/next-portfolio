@@ -1,14 +1,15 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { Layout } from 'src/components/Layout';
-import { Container, Divider, Title } from '@mantine/core';
+import { Container, Divider, Space, Title } from '@mantine/core';
 import { Portfolios } from 'src/components/Portfolios';
 
 const PortfolioPage: NextPage = () => {
   return (
     <Layout content='Portfolio'>
       <Container>
-        <Title align='left'>Portfolio</Title>
+      <Space h='md' />
+        <Title order={2} align='left'>Portfolio</Title>
         <Divider mt='sm' />
         <Portfolios />
       </Container>

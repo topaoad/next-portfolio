@@ -8,7 +8,7 @@ export const GitHubSection = () => {
   return (
     <Container>
       <Stack spacing='lg'>
-        <Title align='left'>GitHub</Title>
+        <Title order={2} align='left'>GitHub</Title>
         <Divider mt='sm' />
         <GitHubRepos />
         <Center>
