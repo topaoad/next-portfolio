@@ -20,7 +20,7 @@ import { isMobileWidth } from 'src/utils/mobile';
 
 const About: NextPage = () => {
   const [opened, setOpened] = useState<boolean>(false);
-  const [isMobileUi, setIsMobileUi] = useAtom(isMobileUiAtom);
+  const [_, setIsMobileUi] = useAtom(isMobileUiAtom);
   const [ref, rect] = useResizeObserver();
 
   const toggleOpenState = (): void => setOpened((prev) => !prev);
