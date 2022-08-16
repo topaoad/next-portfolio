@@ -1,8 +1,8 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { Layout } from 'src/components/Layout';
+import { Layout } from 'src/components/layout/Layout';
 import { Container, Divider, Space, Text, Title } from '@mantine/core';
-import { Blogs } from 'src/components/Blogs';
+import { Blogs } from 'src/components/blog/Blogs';
 
 const BlogPage: NextPage = () => {
   return (

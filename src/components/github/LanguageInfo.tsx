@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { ColorSwatch, Group, Stack, Text } from '@mantine/core';
-import { StuckedBarChart } from './StuckedBarChart';
+import { StuckedBarChart } from '../common/StuckedBarChart';
 
 export type LanguageData = {
   name: string;

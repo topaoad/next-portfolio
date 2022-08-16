@@ -12,9 +12,9 @@ import {
   Text,
   Title,
 } from '@mantine/core';
-import { Header } from 'src/components/Header';
-import { Footer } from 'src/components/Footer';
-import { Navbar } from 'src/components/Navbar';
+import { Header } from 'src/components/layout/Header';
+import { Footer } from 'src/components/layout/Footer';
+import { Navbar } from 'src/components/layout/Navbar';
 import { useResizeObserver } from '@mantine/hooks';
 import { isMobileWidth } from 'src/utils/mobile';
 

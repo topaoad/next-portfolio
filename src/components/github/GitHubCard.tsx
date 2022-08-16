@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Card, Group, Stack, Text } from '@mantine/core';
-import { StarIcon } from './icons/StarIcon';
-import { GitForkIcon } from './icons/GitForkIcon';
+import { StarIcon } from '../icons/StarIcon';
+import { GitForkIcon } from '../icons/GitForkIcon';
 import type { LanguageData } from './LanguageInfo';
 import { LanguageInfo } from './LanguageInfo';
 

@@ -3,9 +3,9 @@ import Head from 'next/head';
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';
 import { AppShell } from '@mantine/core';
-import { Header } from 'src/components/Header';
-import { Footer } from 'src/components/Footer';
-import { Navbar } from 'src/components/Navbar';
+import { Header } from './Header';
+import { Footer } from './Footer';
+import { Navbar } from 'src/components/layout/Navbar';
 import { useResizeObserver } from '@mantine/hooks';
 import { isMobileWidth } from 'src/utils/mobile';
 

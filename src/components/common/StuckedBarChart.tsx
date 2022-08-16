@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Progress } from '@mantine/core';
 
-import type { LanguageData } from './LanguageInfo';
+import type { LanguageData } from '../github/LanguageInfo';
 
 type Props = {
   languages: LanguageData[];

@@ -1,8 +1,8 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { Layout } from 'src/components/Layout';
+import { Layout } from 'src/components/layout/Layout';
 import { Container, Divider, Space, Title } from '@mantine/core';
-import { Portfolios } from 'src/components/Portfolios';
+import { Portfolios } from 'src/components/portfolio/Portfolios';
 
 const PortfolioPage: NextPage = () => {
   return (

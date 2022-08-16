@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styles from './Navbar.module.css';
 import { Navbar as MantineNavbar } from '@mantine/core';
-import { AnchorSelf } from './AnchorSelf';
+import { AnchorSelf } from 'src/components/common/AnchorSelf';
 
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';

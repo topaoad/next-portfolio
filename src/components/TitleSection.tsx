@@ -4,7 +4,7 @@ import { Container, Stack, Space, Text } from '@mantine/core';
 
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';
-import { SnsIconGroup } from './SnsIconGroup';
+import { SnsIconGroup } from './common/SnsIconGroup';
 import cx from 'classnames';
 
 type Props = {

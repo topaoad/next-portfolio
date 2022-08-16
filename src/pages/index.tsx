@@ -1,12 +1,12 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { Layout } from 'src/components/Layout';
+import { Layout } from 'src/components/layout/Layout';
 import { Container, Grid, Stack } from '@mantine/core';
 import { TitleSection } from 'src/components/TitleSection';
-import { BlogSection } from 'src/components/BlogSection';
-import { PortfolioSection } from 'src/components/PortfolioSection';
-import { GitHubSection } from 'src/components/GitHubSection';
-import { TwitterSection } from 'src/components/TwitterSection';
+import { BlogSection } from 'src/components/blog/BlogSection';
+import { PortfolioSection } from 'src/components/portfolio/PortfolioSection';
+import { GitHubSection } from 'src/components/github/GitHubSection';
+import { TwitterSection } from 'src/components/twitter/TwitterSection';
 
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';

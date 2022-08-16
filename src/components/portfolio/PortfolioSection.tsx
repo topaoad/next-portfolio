@@ -1,8 +1,8 @@
 import React from 'react';
 import { Center, Container, Divider, Stack, Title } from '@mantine/core';
-import { LinkButton } from './LinkButton';
 import { Portfolios } from './Portfolios';
-import { AnchorSelf } from './AnchorSelf';
+import { LinkButton } from 'src/components/common/LinkButton';
+import { AnchorSelf } from 'src/components/common/AnchorSelf';
 
 export const PortfolioSection = () => {
   return (

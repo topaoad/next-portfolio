@@ -9,7 +9,7 @@ import {
   useMantineColorScheme,
   Text,
 } from '@mantine/core';
-import { AnchorSelf } from './AnchorSelf';
+import { AnchorSelf } from '../common/AnchorSelf';
 import { IconSun, IconMoonStars } from '@tabler/icons';
 
 import { useAtom } from 'jotai';
