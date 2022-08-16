@@ -1,23 +1,10 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .title {
   font-family: "Avenir Next";
   font-weight: 700;
   font-size: 18px;
-  margin: 0;
-  line-height: 24.59px;
 }
 
-.title {
-  text-align: center;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
+.title:hover {
   text-decoration: underline;
 }
 

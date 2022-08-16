@@ -4,6 +4,8 @@ import styles from './Header.module.css';
 import {
   ActionIcon,
   Burger,
+  Container,
+  Group,
   Header as MantineHeader,
   useMantineColorScheme,
   Text,
@@ -25,9 +27,9 @@ export const Header: FC<Props> = (props) => {
   const dark = colorScheme === 'dark';
 
   return (
-    <div>
-      <MantineHeader height={70} p='md'>
-        <div className={styles.header}>
+    <MantineHeader height={70} p='md'>
+      <Container>
+        <Group position='apart'>
           {isMobileUi && (
             <Burger
               opened={props.opened}
@@ -40,28 +42,30 @@ export const Header: FC<Props> = (props) => {
           <Link href='/' passHref>
             <Text className={styles.title}>Shimabu IT University</Text>
           </Link>
-          {!isMobileUi && (
-            <div className={styles.menu} >
-              <AnchorSelf href='about'>About</AnchorSelf>
-              <AnchorSelf href='blog'>Blog</AnchorSelf>
-              <AnchorSelf href='portfolio'>Portfolio</AnchorSelf>
-              <AnchorSelf href='contact'>Contact</AnchorSelf>
-            </div>
-          )}
-          <ActionIcon
-            variant='outline'
-            sx={{borderColor: '#C1C2C5'}}
-            onClick={() => toggleColorScheme()}
-            title='ダークモードをトグル'
-          >
-            {dark ? (
-              <IconSun size={18} color='yellow' />
-            ) : (
-              <IconMoonStars size={18} color='#25262B' />
+          <Group position = 'right' spacing='xs'>
+            {!isMobileUi && (
+              <div className={styles.menu}>
+                <AnchorSelf href='about'>About</AnchorSelf>
+                <AnchorSelf href='blog'>Blog</AnchorSelf>
+                <AnchorSelf href='portfolio'>Portfolio</AnchorSelf>
+                <AnchorSelf href='contact'>Contact</AnchorSelf>
+              </div>
             )}
-          </ActionIcon>
-        </div>
-      </MantineHeader>
-    </div>
+            <ActionIcon
+              variant='outline'
+              sx={{ borderColor: '#C1C2C5' }}
+              onClick={() => toggleColorScheme()}
+              title='ダークモードをトグル'
+            >
+              {dark ? (
+                <IconSun size={18} color='yellow' />
+              ) : (
+                <IconMoonStars size={18} color='#25262B' />
+              )}
+            </ActionIcon>
+          </Group>
+        </Group>
+      </Container>
+    </MantineHeader>
   );
 };

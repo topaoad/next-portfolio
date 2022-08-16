@@ -1,1 +1,1 @@
-export const isMobileWidth = (width: number) => width <= 600;
+export const isMobileWidth = (width: number) => width <= 650;
