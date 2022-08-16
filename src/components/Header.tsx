@@ -39,10 +39,10 @@ export const Header: FC<Props> = (props) => {
               mr='xl'
             />
           )}
-          <Link href='/' passHref>
+          <AnchorSelf href='/'>
             <Text className={styles.title}>Shimabu IT University</Text>
-          </Link>
-          <Group position = 'right' spacing='xs'>
+          </AnchorSelf>
+          <Group position='right' spacing='xs'>
             {!isMobileUi && (
               <div className={styles.menu}>
                 <AnchorSelf href='about'>About</AnchorSelf>

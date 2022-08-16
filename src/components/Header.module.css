@@ -4,10 +4,6 @@
   font-size: 18px;
 }
 
-.title:hover {
-  text-decoration: underline;
-}
-
 .menu {
   font-family: "Avenir Next";
   display: flex;
