@@ -19,7 +19,7 @@ export const tweetData = [
     userImage:
     'https://pbs.twimg.com/profile_images/1473095887069097984/53rtMTuN_400x400.png',
     userName: '@pitang1965',
-    userScreenName: 'ピータン@o11b（57歳で早期退職）',
+    userScreenName: 'ピータン',
     date: '2022-08-13',
     tweet: `このあたりでちょっと悩んでいたが、後回しにして先に進もう。
 

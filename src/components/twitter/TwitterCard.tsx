@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import styles from './TwitterCard.module.css';
 import { Avatar, Card, Group, Stack, Text } from '@mantine/core';
 
 type Props = {
@@ -24,7 +25,7 @@ export const TwitterCard: FC<Props> = (props) => {
           alt={props.data.userScreenName}
         />
         <Stack>
-          <Group grow>
+          <div className={styles.header}>
             <Text size='sm' weight={700}>
               {props.data.userScreenName}
             </Text>
@@ -32,7 +33,7 @@ export const TwitterCard: FC<Props> = (props) => {
               size='xs'
               color='dimmed'
             >{`${props.data.userName}・${props.data.date}`}</Text>
-          </Group>
+          </div>
           <Text size='sm' weight={500}>
             {props.data.tweet}
           </Text>
