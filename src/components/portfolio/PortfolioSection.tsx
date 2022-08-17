@@ -12,7 +12,7 @@ export const PortfolioSection = () => {
           Portfolio
         </Title>
         <Divider mt='sm' />
-        <Portfolios />
+        <Portfolios isHomePage />
         <Center>
           <AnchorSelf href='/portfolio'>
             <LinkButton>View All</LinkButton>

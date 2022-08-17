@@ -12,7 +12,7 @@ export const BlogSection = () => {
           Blog
         </Title>
         <Divider mt='sm' />
-        <Blogs />
+        <Blogs isHomePage />
         <Center>
           <AnchorSelf href='/blog'>
             <LinkButton>View All</LinkButton>

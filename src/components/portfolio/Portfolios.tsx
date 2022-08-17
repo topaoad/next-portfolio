@@ -1,5 +1,4 @@
-import React from 'react';
-import { useRouter } from 'next/router';
+import React, { FC } from 'react';
 import { Container } from '@mantine/core';
 import { portfolioData } from 'data/portfolioData';
 import { PortfolioCard } from './PortfolioCard';
@@ -7,12 +6,14 @@ import { PortfolioCard } from './PortfolioCard';
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';
 
-export const Portfolios = () => {
+type Props = {
+  isHomePage: boolean;
+};
+
+export const Portfolios: FC<Props> = ({ isHomePage }) => {
   // ポートフォリをいくつ表示するかどうか（モバイル表示かどうか、ホームページかどうかで異なる）
-  const router = useRouter();
   const [isMobileUi] = useAtom(isMobileUiAtom);
-  const numbersToShow =
-    router.pathname === '/' ? (isMobileUi ? 3 : 6) : isMobileUi ? 4 : 9;
+  const numbersToShow = isHomePage ? (isMobileUi ? 3 : 6) : isMobileUi ? 4 : 9;
 
   return (
     <Container

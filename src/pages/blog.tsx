@@ -13,7 +13,7 @@ const BlogPage: NextPage = () => {
           Blog
         </Title>
         <Divider mt='sm' />
-        <Blogs />
+        <Blogs isHomePage={false} />
         <Text color='dimmed'>未作業：ローディングアニメーション</Text>
       </Container>
     </Layout>

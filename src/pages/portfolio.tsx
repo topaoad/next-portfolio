@@ -13,7 +13,7 @@ const PortfolioPage: NextPage = () => {
           Portfolio
         </Title>
         <Divider mt='sm' />
-        <Portfolios />
+        <Portfolios isHomePage={false} />
       </Container>
     </Layout>
   );

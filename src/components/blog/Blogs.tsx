@@ -1,6 +1,4 @@
-import React from 'react';
-import { useRouter } from 'next/router';
-
+import React, { FC } from 'react';
 import { Container, Stack } from '@mantine/core';
 import { blogData } from 'data/blogData';
 import { BlogCard } from './BlogCard';
@@ -8,12 +6,15 @@ import { BlogCard } from './BlogCard';
 import { useAtom } from 'jotai';
 import { isMobileUiAtom } from 'src/atoms/uiMode';
 
-export const Blogs = () => {
+type Props = {
+  isHomePage: boolean;
+};
+
+export const Blogs:FC<Props> = ({isHomePage}) => {
   // ブログをいくつ表示するかどうか（モバイル表示かどうか、ホームページかどうかで異なる）
-  const router = useRouter();
   const [isMobileUi] = useAtom(isMobileUiAtom);
   const numberToShow =
-    router.pathname === '/' ? (isMobileUi ? 4 : 5) : isMobileUi ? 5 : 10;
+  isHomePage ? (isMobileUi ? 4 : 5) : isMobileUi ? 5 : 10;
 
   return (
     <Container fluid>
