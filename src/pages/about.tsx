@@ -1,49 +1,12 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
 import type { NextPage } from 'next';
+import { Layout } from 'src/components/layout/Layout';
 import Head from 'next/head';
-import { useAtom } from 'jotai';
-import { isMobileUiAtom } from 'src/atoms/uiMode';
-import {
-  AppShell,
-  Container,
-  Divider,
-  Space,
-  Stack,
-  Text,
-  Title,
-} from '@mantine/core';
-import { Header } from 'src/components/layout/Header';
-import { Footer } from 'src/components/layout/Footer';
-import { Navbar } from 'src/components/layout/Navbar';
-import { useResizeObserver } from '@mantine/hooks';
-import { isMobileWidth } from 'src/utils/mobile';
+import { Container, Divider, Space, Stack, Text, Title } from '@mantine/core';
 
 const About: NextPage = () => {
-  const [opened, setOpened] = useState<boolean>(false);
-  const [_, setIsMobileUi] = useAtom(isMobileUiAtom);
-  const [ref, rect] = useResizeObserver();
-
-  const toggleOpenState = (): void => setOpened((prev) => !prev);
-
-  useEffect(() => {
-    setIsMobileUi(isMobileWidth(rect.width));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [rect.width]);
-
   return (
-    <AppShell
-      padding='md'
-      header={<Header opened={opened} toggleOpenState={toggleOpenState} />}
-      footer={<Footer />}
-      navbarOffsetBreakpoint='sm'
-      navbar={<Navbar opened={opened} />}
-      ref={ref}
-    >
-      <Head>
-        <title>Next Portfolio</title>
-        <meta name='description' content='Shimabu IT University' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
+    <Layout content='About'>
       <Container>
         <Head>
           <title>About - Next Portfolio</title>
@@ -64,7 +27,7 @@ const About: NextPage = () => {
           </Text>
         </Stack>
       </Container>
-    </AppShell>
+    </Layout>
   );
 };
 
