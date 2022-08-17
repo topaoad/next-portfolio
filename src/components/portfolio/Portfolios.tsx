@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { Box, Container } from '@mantine/core';
+import { Container } from '@mantine/core';
 import { portfolioData } from 'data/portfolioData';
 import { PortfolioCard } from './PortfolioCard';
 
@@ -19,17 +19,15 @@ export const Portfolios = () => {
   }
 
   return (
-    <Container fluid>
-      <Box
-        sx={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-        }}
-      >
-        {portfolioData.slice(0, numbersToShow).map((portfolio) => (
-          <PortfolioCard key={portfolio.id} data={portfolio} />
-        ))}
-      </Box>
+    <Container
+      sx={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+      }}
+    >
+      {portfolioData.slice(0, numbersToShow).map((portfolio) => (
+        <PortfolioCard key={portfolio.id} data={portfolio} />
+      ))}
     </Container>
   );
 };
