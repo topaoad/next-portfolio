@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { Container, Grid } from '@mantine/core';
+import { Box, Container } from '@mantine/core';
 import { portfolioData } from 'data/portfolioData';
 import { PortfolioCard } from './PortfolioCard';
 
@@ -11,37 +11,25 @@ export const Portfolios = () => {
   // ポートフォリをいくつ表示するかどうか（モバイル表示かどうか、ホームページかどうかで異なる）
   const router = useRouter();
   const [isMobileUi] = useAtom(isMobileUiAtom);
-  let row;
-  let col;
+  let numbersToShow;
   if (router.pathname === '/') {
-    if (isMobileUi) {
-      row = 3;
-      col = 1;
-    } else {
-      row = 2;
-      col = 3;
-    }
+    numbersToShow = isMobileUi ? 3 : 6;
   } else {
-    if (isMobileUi) {
-      row = 4;
-      col = 1;
-    } else {
-      row = 3;
-      col = 3;
-    }
+    numbersToShow = isMobileUi ? 4 : 9;
   }
-  const numbersToShow = row * col;
-  const span = 12 / col;
 
   return (
     <Container fluid>
-      <Grid>
+      <Box
+        sx={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+        }}
+      >
         {portfolioData.slice(0, numbersToShow).map((portfolio) => (
-          <Grid.Col span={span} key={portfolio.id}>
-            <PortfolioCard data={portfolio} />
-          </Grid.Col>
+          <PortfolioCard key={portfolio.id} data={portfolio} />
         ))}
-      </Grid>
+      </Box>
     </Container>
   );
 };
