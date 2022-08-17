@@ -6,7 +6,7 @@ import { AnchorSelf } from 'src/components/common/AnchorSelf';
 
 export const PortfolioSection = () => {
   return (
-    <Container>
+    <Container  sx={{ width: '100%' }} >
       <Stack>
         <Title order={2} align='left'>
           Portfolio

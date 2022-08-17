@@ -10,14 +10,13 @@ type Props = {
   isHomePage: boolean;
 };
 
-export const Blogs:FC<Props> = ({isHomePage}) => {
+export const Blogs: FC<Props> = ({ isHomePage }) => {
   // ブログをいくつ表示するかどうか（モバイル表示かどうか、ホームページかどうかで異なる）
   const [isMobileUi] = useAtom(isMobileUiAtom);
-  const numberToShow =
-  isHomePage ? (isMobileUi ? 4 : 5) : isMobileUi ? 5 : 10;
+  const numberToShow = isHomePage ? (isMobileUi ? 4 : 5) : isMobileUi ? 5 : 10;
 
   return (
-    <Container fluid>
+    <Container sx={{ width: '100%' }}>
       <Stack spacing='xl'>
         {blogData.slice(0, numberToShow).map((blog) => (
           <BlogCard data={blog} key={blog.id} />

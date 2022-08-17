@@ -20,6 +20,7 @@ export const Portfolios: FC<Props> = ({ isHomePage }) => {
       sx={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+        width: '100%',
       }}
     >
       {portfolioData.slice(0, numbersToShow).map((portfolio) => (

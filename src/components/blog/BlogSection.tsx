@@ -6,7 +6,7 @@ import { AnchorSelf } from 'src/components/common/AnchorSelf';
 
 export const BlogSection = () => {
   return (
-    <Container>
+    <Container sx={{ width: '100%' }}>
       <Stack spacing='lg'>
         <Title order={2} align='left'>
           Blog
