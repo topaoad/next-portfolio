@@ -8,8 +8,10 @@ const PortfolioPage: NextPage = () => {
   return (
     <Layout content='Portfolio'>
       <Container>
-      <Space h='md' />
-        <Title order={2} align='left'>Portfolio</Title>
+        <Space h='md' />
+        <Title order={2} align='left'>
+          Portfolio
+        </Title>
         <Divider mt='sm' />
         <Portfolios />
       </Container>

@@ -8,8 +8,10 @@ const BlogPage: NextPage = () => {
   return (
     <Layout content='Blog'>
       <Container>
-      <Space h='md' />
-        <Title order={2} align='left'>Blog</Title>
+        <Space h='md' />
+        <Title order={2} align='left'>
+          Blog
+        </Title>
         <Divider mt='sm' />
         <Blogs />
         <Text color='dimmed'>未作業：ローディングアニメーション</Text>

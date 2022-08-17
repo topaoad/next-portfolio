@@ -8,7 +8,9 @@ export const PortfolioSection = () => {
   return (
     <Container>
       <Stack>
-        <Title order={2} align='left'>Portfolio</Title>
+        <Title order={2} align='left'>
+          Portfolio
+        </Title>
         <Divider mt='sm' />
         <Portfolios />
         <Center>
