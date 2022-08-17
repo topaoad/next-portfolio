@@ -20,7 +20,7 @@ export const Layout: FC<Props> = (prpps) => {
   const { ref, width } = useElementSize();
 
   useEffect(() => {
-    if (isMobileWidth(width) !== isMobileUi) {
+    if (width !== 0 && isMobileWidth(width) !== isMobileUi) {
       setIsMobileUi(isMobileWidth(width));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
