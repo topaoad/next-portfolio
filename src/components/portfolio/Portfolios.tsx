@@ -11,12 +11,8 @@ export const Portfolios = () => {
   // ポートフォリをいくつ表示するかどうか（モバイル表示かどうか、ホームページかどうかで異なる）
   const router = useRouter();
   const [isMobileUi] = useAtom(isMobileUiAtom);
-  let numbersToShow;
-  if (router.pathname === '/') {
-    numbersToShow = isMobileUi ? 3 : 6;
-  } else {
-    numbersToShow = isMobileUi ? 4 : 9;
-  }
+  const numbersToShow =
+    router.pathname === '/' ? (isMobileUi ? 3 : 6) : isMobileUi ? 4 : 9;
 
   return (
     <Container

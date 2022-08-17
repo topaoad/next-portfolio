@@ -11,13 +11,9 @@ import { isMobileUiAtom } from 'src/atoms/uiMode';
 export const Blogs = () => {
   // ブログをいくつ表示するかどうか（モバイル表示かどうか、ホームページかどうかで異なる）
   const router = useRouter();
-  let numberToShow;
   const [isMobileUi] = useAtom(isMobileUiAtom);
-  if (router.pathname === '/') {
-    numberToShow = isMobileUi ? 4 : 5;
-  } else {
-    numberToShow = isMobileUi ? 5 : 10;
-  }
+  const numberToShow =
+    router.pathname === '/' ? (isMobileUi ? 4 : 5) : isMobileUi ? 5 : 10;
 
   return (
     <Container fluid>
