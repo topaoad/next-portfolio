@@ -1,7 +1,14 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { Layout } from 'src/components/layout/Layout';
-import { Container, Divider, Space, Text, Title } from '@mantine/core';
+import {
+  Center,
+  Container,
+  Divider,
+  Loader,
+  Space,
+  Title,
+} from '@mantine/core';
 import { Blogs } from 'src/components/blog/Blogs';
 
 const BlogPage: NextPage = () => {
@@ -14,7 +21,9 @@ const BlogPage: NextPage = () => {
         </Title>
         <Divider mt='sm' />
         <Blogs isHomePage={false} />
-        <Text color='dimmed'>未作業：ローディングアニメーション</Text>
+        <Center>
+          <Loader color='red' />
+        </Center>
       </Container>
     </Layout>
   );
