@@ -36,7 +36,7 @@ export const Layout: FC<Props> = (prpps) => {
       header={<Header opened={opened} toggleOpenState={toggleOpenState} />}
       footer={<Footer />}
       navbarOffsetBreakpoint='sm'
-      navbar={<Navbar opened={opened} />}
+      navbar={<Navbar opened={opened} toggleOpenState={toggleOpenState} />}
       ref={ref}
     >
       <Head>

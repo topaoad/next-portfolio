@@ -5,4 +5,10 @@
   line-height: 38.25px;
   color: white;
   background-color: #e64980;
+
+  /* ウィンドウ全体にメニューを広げる */
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 200;
 }

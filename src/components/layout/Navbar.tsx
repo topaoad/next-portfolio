@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styles from './Navbar.module.css';
-import { Navbar as MantineNavbar } from '@mantine/core';
+import { Burger, Navbar as MantineNavbar } from '@mantine/core';
 import { AnchorSelf } from 'src/components/common/AnchorSelf';
 
 import { useAtom } from 'jotai';
@@ -8,6 +8,7 @@ import { isMobileUiAtom } from 'src/atoms/uiMode';
 
 type Props = {
   opened: boolean;
+  toggleOpenState: () => void;
 };
 
 export const Navbar: FC<Props> = (props) => {
@@ -21,6 +22,13 @@ export const Navbar: FC<Props> = (props) => {
       width={{ sm: 200, lg: 300 }}
       className={styles.navbar}
     >
+      <Burger
+        opened={props.opened}
+        onClick={() => props.toggleOpenState()}
+        size='sm'
+        title='バーガーメニュー'
+        mr='xl'
+      />
       <MantineNavbar.Section mt='md'>
         <AnchorSelf href='about' color='white'>
           About
@@ -42,7 +50,5 @@ export const Navbar: FC<Props> = (props) => {
         </AnchorSelf>
       </MantineNavbar.Section>
     </MantineNavbar>
-  ) : (
-    <div></div>
-  );
+  ) : null;
 };
