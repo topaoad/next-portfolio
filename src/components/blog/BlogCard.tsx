@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Card, Text, TypographyStylesProvider } from '@mantine/core';
+import { Paper, Text, TypographyStylesProvider } from '@mantine/core';
 import { AnchorSelf } from 'src/components/common/AnchorSelf';
 
 type Props = {
@@ -15,7 +15,7 @@ type Data = {
 
 export const BlogCard: FC<Props> = (props) => {
   return (
-    <Card>
+    <Paper>
       <AnchorSelf href={`/blog/${props.data.id}`}>
         <Text size='lg' weight={700}>
           {props.data.title}
@@ -29,6 +29,6 @@ export const BlogCard: FC<Props> = (props) => {
       <Text size='xs' color='dimmed'>
         {props.data.createdAt}
       </Text>
-    </Card>
+    </Paper>
   );
 };

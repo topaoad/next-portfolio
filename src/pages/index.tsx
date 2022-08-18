@@ -18,13 +18,7 @@ const HomePage: NextPage = () => {
   return (
     <Layout content='Home'>
       <Container>
-        <Stack
-          spacing='lg'
-          sx={(theme) => ({
-            backgroundColor:
-              theme.colorScheme === 'dark' ? theme.colors.dark[8] : 'white',
-          })}
-        >
+        <Stack spacing='lg'>
           <TitleSection name='ピータン' />
           <BlogSection />
           <PortfolioSection />

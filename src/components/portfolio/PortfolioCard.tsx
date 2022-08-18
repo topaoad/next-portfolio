@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { FC } from 'react';
 import Image from 'next/image';
-import { Card, Text } from '@mantine/core';
+import { Paper, Text } from '@mantine/core';
 
 type Props = {
   data: Data;
@@ -20,7 +20,7 @@ type Data = {
 
 export const PortfolioCard: FC<Props> = (props) => {
   return (
-    <Card>
+    <Paper>
       <a href = {props.data.siteUrl}>
         <Image
           src={props.data.imageUrl}
@@ -38,6 +38,6 @@ export const PortfolioCard: FC<Props> = (props) => {
       <Text size='xs' color='dimmed'>
         {`${props.data.dateFrom} - ${props.data.dateTo}`}
       </Text>
-    </Card>
+    </Paper>
   );
 };
