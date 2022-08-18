@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import { Card, Text } from '@mantine/core';
+import React, { FC } from 'react';
+import { Card, Text, TypographyStylesProvider } from '@mantine/core';
 
 type Props = {
   data: Data;
@@ -13,7 +13,6 @@ type Data = {
   createdAt: string;
 };
 
-
 export const BlogCard: FC<Props> = (props) => {
   return (
     <Card>
@@ -22,10 +21,14 @@ export const BlogCard: FC<Props> = (props) => {
           {props.data.title}
         </Text>
       </a>
-      <Text size='sm' weight={500} lineClamp={2}>
-        {props.data.content}
+      <TypographyStylesProvider>
+        <Text size='sm' weight={500} lineClamp={2}>
+          <div dangerouslySetInnerHTML={{ __html: props.data.content }} />
+        </Text>
+      </TypographyStylesProvider>
+      <Text size='xs' color='dimmed'>
+        {props.data.createdAt}
       </Text>
-      <Text size='xs' color='dimmed'>{props.data.createdAt}</Text>
     </Card>
   );
 };

@@ -16,14 +16,20 @@ export const blogData = [
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
@@ -37,14 +43,20 @@ Todo example using Supabase [React]
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
@@ -58,14 +70,20 @@ Todo example using Supabase [React]
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
@@ -79,14 +97,20 @@ Todo example using Supabase [React]
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
@@ -100,14 +124,20 @@ Todo example using Supabase [React]
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
@@ -121,14 +151,20 @@ Todo example using Supabase [React]
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
@@ -142,14 +178,20 @@ Todo example using Supabase [React]
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
@@ -163,14 +205,20 @@ Todo example using Supabase [React]
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
@@ -184,14 +232,20 @@ Todo example using Supabase [React]
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
@@ -205,14 +259,20 @@ Todo example using Supabase [React]
     content: `概要
 オープンソースでFirebaseの代替として人気のあるsupabaseをちょっと試してみました（チュートリアル＋α）。
 
-Quickstart: React
-Todo example using Supabase [React]
+<ul>
+<li>Quickstart: React</li>
+<li>Todo example using Supabase [React]</li>
+</ul>
+
 機能として以下があります。
 
-データベース (Postgres)
-認証
-ストレージ
-エッジファクション
+<ol>
+<li>データベース (Postgres)</li>
+<li>認証</li>
+<li>ストレージ</li>
+<li>エッジファクション</li>
+</ol>
+
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
