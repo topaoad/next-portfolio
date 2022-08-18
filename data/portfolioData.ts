@@ -38,7 +38,8 @@ export const portfolioData = [
     siteUrl: 'https://tate-tweet.netlify.app',
     imageUrl:
       'https://user-images.githubusercontent.com/47315420/163192420-78ebd8c3-846c-4ffe-a5f3-16ad5c18e247.jpg',
-    createdAt: '2022-07-28',
+    dateFrom: '2022.04',
+    dateTo: '2022.04',
   },
   {
     id: '5',
