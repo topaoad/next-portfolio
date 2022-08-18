@@ -28,6 +28,7 @@ export const Navbar: FC<Props> = (props) => {
         size='sm'
         title='バーガーメニュー'
         mr='xl'
+        className={styles.burger}
       />
       <MantineNavbar.Section mt='md'>
         <AnchorSelf href='about' color='white'>
