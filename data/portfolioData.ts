@@ -4,8 +4,10 @@ export const portfolioData = [
     title: 'たてツイート',
     description: '縦書きツイートをするためのアプリ(2022-04-13公開）',
     siteUrl: 'https://tate-tweet.netlify.app',
-    imageUrl: 'https://user-images.githubusercontent.com/47315420/163192420-78ebd8c3-846c-4ffe-a5f3-16ad5c18e247.jpg',
-    createdAt: '2022-07-28',
+    imageUrl:
+      'https://user-images.githubusercontent.com/47315420/163192420-78ebd8c3-846c-4ffe-a5f3-16ad5c18e247.jpg',
+    dateFrom: '2022.04',
+    dateTo: '2022.04',
   },
   {
     id: '2',
@@ -15,7 +17,8 @@ export const portfolioData = [
     siteUrl: 'https://github.com/pitang1965/todays-lunch',
     imageUrl:
       'https://user-images.githubusercontent.com/47315420/179329363-60e3bc87-9f2d-4eea-a71c-92bc63eb4c1d.png',
-    createdAt: '2022-07-28',
+    dateFrom: '2022-02',
+    dateTo: '2022-02',
   },
   {
     id: '3',
@@ -25,14 +28,16 @@ export const portfolioData = [
     siteUrl: 'https://github.com/pitang1965/bus-timetable',
     imageUrl:
       'https://user-images.githubusercontent.com/47315420/149931519-115e9ac0-4d8d-4432-82e8-b6098d944e59.png',
-    createdAt: '2022-07-28',
+    dateFrom: '2022-02',
+    dateTo: '2022-03',
   },
   {
     id: '4',
     title: 'たてツイート',
     description: '縦書きツイートをするためのアプリ(2022-04-13公開）',
     siteUrl: 'https://tate-tweet.netlify.app',
-    imageUrl: 'https://user-images.githubusercontent.com/47315420/163192420-78ebd8c3-846c-4ffe-a5f3-16ad5c18e247.jpg',
+    imageUrl:
+      'https://user-images.githubusercontent.com/47315420/163192420-78ebd8c3-846c-4ffe-a5f3-16ad5c18e247.jpg',
     createdAt: '2022-07-28',
   },
   {
@@ -43,7 +48,8 @@ export const portfolioData = [
     siteUrl: 'https://github.com/pitang1965/todays-lunch',
     imageUrl:
       'https://user-images.githubusercontent.com/47315420/179329363-60e3bc87-9f2d-4eea-a71c-92bc63eb4c1d.png',
-    createdAt: '2022-07-28',
+    dateFrom: '2022-02',
+    dateTo: '2022-02',
   },
   {
     id: '6',
@@ -53,15 +59,18 @@ export const portfolioData = [
     siteUrl: 'https://github.com/pitang1965/bus-timetable',
     imageUrl:
       'https://user-images.githubusercontent.com/47315420/149931519-115e9ac0-4d8d-4432-82e8-b6098d944e59.png',
-    createdAt: '2022-07-28',
+    dateFrom: '2022-02',
+    dateTo: '2022-03',
   },
   {
     id: '7',
     title: 'たてツイート',
     description: '縦書きツイートをするためのアプリ(2022-04-13公開）',
     siteUrl: 'https://tate-tweet.netlify.app',
-    imageUrl: 'https://user-images.githubusercontent.com/47315420/163192420-78ebd8c3-846c-4ffe-a5f3-16ad5c18e247.jpg',
-    createdAt: '2022-07-28',
+    imageUrl:
+      'https://user-images.githubusercontent.com/47315420/163192420-78ebd8c3-846c-4ffe-a5f3-16ad5c18e247.jpg',
+    dateFrom: '2022.04',
+    dateTo: '2022.04',
   },
   {
     id: '8',
@@ -71,7 +80,8 @@ export const portfolioData = [
     siteUrl: 'https://github.com/pitang1965/todays-lunch',
     imageUrl:
       'https://user-images.githubusercontent.com/47315420/179329363-60e3bc87-9f2d-4eea-a71c-92bc63eb4c1d.png',
-    createdAt: '2022-07-28',
+    dateFrom: '2022-02',
+    dateTo: '2022-02',
   },
   {
     id: '9',
@@ -81,15 +91,18 @@ export const portfolioData = [
     siteUrl: 'https://github.com/pitang1965/bus-timetable',
     imageUrl:
       'https://user-images.githubusercontent.com/47315420/149931519-115e9ac0-4d8d-4432-82e8-b6098d944e59.png',
-    createdAt: '2022-07-28',
+    dateFrom: '2022-02',
+    dateTo: '2022-03',
   },
   {
     id: '10',
     title: 'たてツイート',
     description: '縦書きツイートをするためのアプリ(2022-04-13公開）',
     siteUrl: 'https://tate-tweet.netlify.app',
-    imageUrl: 'https://user-images.githubusercontent.com/47315420/163192420-78ebd8c3-846c-4ffe-a5f3-16ad5c18e247.jpg',
-    createdAt: '2022-07-28',
+    imageUrl:
+      'https://user-images.githubusercontent.com/47315420/163192420-78ebd8c3-846c-4ffe-a5f3-16ad5c18e247.jpg',
+    dateFrom: '2022.04',
+    dateTo: '2022.04',
   },
   {
     id: '11',
@@ -99,7 +112,8 @@ export const portfolioData = [
     siteUrl: 'https://github.com/pitang1965/todays-lunch',
     imageUrl:
       'https://user-images.githubusercontent.com/47315420/179329363-60e3bc87-9f2d-4eea-a71c-92bc63eb4c1d.png',
-    createdAt: '2022-07-28',
+    dateFrom: '2022-02',
+    dateTo: '2022-02',
   },
   {
     id: '12',
@@ -109,6 +123,7 @@ export const portfolioData = [
     siteUrl: 'https://github.com/pitang1965/bus-timetable',
     imageUrl:
       'https://user-images.githubusercontent.com/47315420/149931519-115e9ac0-4d8d-4432-82e8-b6098d944e59.png',
-    createdAt: '2022-07-28',
+    dateFrom: '2022-02',
+    dateTo: '2022-03',
   },
 ];

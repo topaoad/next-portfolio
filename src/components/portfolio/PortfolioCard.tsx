@@ -13,7 +13,8 @@ type Data = {
   description: string;
   siteUrl: string;
   imageUrl: string;
-  createdAt: string;
+  dateFrom: string;
+  dateTo: string;
 };
 
 
@@ -35,7 +36,7 @@ export const PortfolioCard: FC<Props> = (props) => {
         {props.data.description}
       </Text>
       <Text size='xs' color='dimmed'>
-        {props.data.createdAt}
+        {`${props.data.dateFrom} - ${props.data.dateTo}`}
       </Text>
     </Card>
   );
