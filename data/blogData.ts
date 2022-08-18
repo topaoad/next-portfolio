@@ -3,6 +3,8 @@ export const blogData2 = [
     id: '1',
     title: 'ハロー',
     content: 'どうも',
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
 ];
@@ -31,6 +33,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
   {
@@ -56,6 +60,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
   {
@@ -81,6 +87,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
   {
@@ -106,6 +114,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
   {
@@ -131,6 +141,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
   {
@@ -156,6 +168,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
   {
@@ -181,6 +195,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
   {
@@ -206,6 +222,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
   {
@@ -231,6 +249,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
   {
@@ -256,6 +276,8 @@ export const blogData = [
 個人開発にはとても良さそうです。ただ無料プランだと1週間使わないと停止するそうです（どういうことかよくわかっていない。料金プラン参照）。
 
 認証（パスワードレスのマジックリンク）付きでデータベース、プロフィール画像はストレージに保存する次のようなtodoアプリを作成しました。`,
+    siteUrl:
+      'https://software.pitang1965.com/2022/07/28/supabase-getting-started/',
     createdAt: '2022-07-28',
   },
 ];
