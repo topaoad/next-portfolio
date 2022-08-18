@@ -16,7 +16,7 @@ const HomePage: NextPage = () => {
   const gridSpan = isMobileUi ? 12 : 6;
 
   return (
-    <Layout content='Contact'>
+    <Layout content='Home'>
       <Container>
         <Stack
           spacing='lg'
