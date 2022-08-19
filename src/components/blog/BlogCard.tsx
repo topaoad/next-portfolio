@@ -1,16 +1,10 @@
 import React, { FC } from 'react';
 import { Paper, Text, TypographyStylesProvider } from '@mantine/core';
 import { AnchorSelf } from 'src/components/common/AnchorSelf';
+import { BlogDataType } from 'data/blogData';
 
 type Props = {
-  data: Data;
-};
-
-type Data = {
-  id: string;
-  title: string;
-  content: string;
-  createdAt: string;
+  data: BlogDataType;
 };
 
 export const BlogCard: FC<Props> = (props) => {

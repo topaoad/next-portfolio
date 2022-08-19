@@ -1,4 +1,11 @@
-export const blogData2 = [
+export type BlogDataType = {
+  id: string;
+  title: string;
+  content: string;
+  createdAt: string;
+};
+
+export const blogData2:BlogDataType[] = [
   {
     id: '1',
     title: 'ハロー',
@@ -7,7 +14,7 @@ export const blogData2 = [
   },
 ];
 
-export const blogData = [
+export const blogData:BlogDataType[] = [
   {
     id: '1',
     title: 'Supabaseに入門しました',
