@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import { Progress } from '@mantine/core';
 
-import type { LanguageData } from '../github/LanguageInfo';
+import type { LanguageDataType } from '../github/LanguageInfo';
 
 type Props = {
-  languages: LanguageData[];
+  languages: LanguageDataType[];
 };
 
 export const StuckedBarChart: FC<Props> = (props) => {

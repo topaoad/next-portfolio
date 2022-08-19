@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Card, Group, Stack, Text } from '@mantine/core';
 import { StarIcon } from '../icons/StarIcon';
 import { GitForkIcon } from '../icons/GitForkIcon';
-import type { LanguageData } from './LanguageInfo';
+import type { LanguageDataType } from './LanguageInfo';
 import { LanguageInfo } from './LanguageInfo';
 
 type Props = {
@@ -16,7 +16,7 @@ type Data = {
   description: string;
   stars: number;
   forks: number;
-  languages: LanguageData[];
+  languages: LanguageDataType[];
 };
 
 export const GitHubCard: FC<Props> = (props) => {
